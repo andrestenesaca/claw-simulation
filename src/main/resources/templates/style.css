@@ -1,0 +1,90 @@
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "Bahnschrift", serif;
+}
+
+#center-game {
+    background-color: powderblue;
+    height: 600px;
+    width: 500px;
+    margin: 0 auto;
+    border: solid black 10px;
+    position: relative;
+    border-radius: 5%;
+}
+
+#glass {
+    background-color: green;
+    opacity: 20%;
+    height: 400px;
+    width: 500px;
+    border-radius: 5%;
+}
+
+#door-exit {
+    background-color: black;
+    height: 90px;
+    width: 120px;
+    margin-left: 30px;
+    margin-top: 75px;
+    border-radius: 20%;
+}
+
+#claw {
+    background-color: black;
+    height: 130px;
+    width: 30px;
+    position: absolute;
+    transform: translate(70px,-400px);
+    will-change: transform;
+
+}
+
+#timer {
+    background-color: black;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    transform: translate(200px,-570px);
+    border-radius: 10%;
+    text-align: center;
+    line-height: 40px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#toy {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    transform: translate(300px, 340px);
+    border-radius: 50%; /* Makes it orb-like */
+    box-shadow:
+            0 0 10px rgba(170, 0, 255, 0.8),
+            0 0 20px rgba(170, 0, 255, 0.6),
+            0 0 30px rgba(170, 0, 255, 0.4),
+            inset 0 0 10px rgba(255, 0, 255, 0.7); /* Inner glow */
+    background: purple radial-gradient(circle at 30% 30%, #d580ff, #4b0082);
+    animation: glowPulsePurple 2s infinite ease-in-out;
+    will-change: transform;
+}
+
+@keyframes
+glowPulsePurple {
+    0%, 100% {
+        box-shadow:
+                0 0 10px rgba(170, 0, 255, 0.8),
+                0 0 20px rgba(170, 0, 255, 0.6),
+                0 0 30px rgba(170, 0, 255, 0.4),
+                inset 0 0 10px rgba(255, 0, 255, 0.7);
+    }
+    50% {
+        box-shadow:
+                0 0 15px rgba(200, 0, 255, 1),
+                0 0 25px rgba(200, 0, 255, 0.8),
+                0 0 35px rgba(200, 0, 255, 0.5),
+                inset 0 0 15px rgba(255, 0, 255, 0.9);
+    }
+}
